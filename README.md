@@ -26,6 +26,12 @@ Open [the latest tester release](https://github.com/harshvgaj-sudo/KinetiSub-Rel
 - Format, resolution and frame-rate support depend on the device encoder. Transparent WebM support also depends on the receiving editor.
 - Android store distribution is pending developer-account setup, signing and physical-device checks. Do not mistake an unsigned AAB or a developer debug APK for a production store release.
 
+## Android developer tester
+
+The matching release includes `KinetiSub-0.1.0-android-debug.apk` for Android 10 or newer. It is debug-signed for developer testing, not a Google Play production release. Only install it if you deliberately want to test this prerelease. The latest APK has not been verified on a physical phone. Check its dedicated SHA-256 file before installation. A future production-signed app may require uninstalling this developer package; export anything you need to keep first.
+
+Android uses Google's AdMob test identifiers and UMP consent integration. Test ad requests may occur after successful exports, capped at two attempts per local day. They do not generate revenue. No subscription or purchase flow is available.
+
 ## Privacy and feedback
 
 Caption/media processing is local; KinetiSub does not upload your files to a KinetiSub server. See [the tester privacy notice](PRIVACY.md).
